@@ -1,0 +1,474 @@
+/* /* h2,
+h3 {
+    color: #43A047;
+}
+
+button {
+    background-color: #43A047;
+    cursor: default;
+}
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+پروژه 2
+a {
+    /* margin-top: 50px !important; 
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #43A047;
+}
+
+.form .message {
+    margin: 25px 0 0;
+    color: #4CAF50;
+    margin-bottom: 20px !important;
+}
+
+.form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container .info span .fa {
+    color: #EF3B3A;
+}
+
+body {
+    background: #76b852;
+    /* fallback for old browsers */
+
+
+/* 
+background: -webkit-linear-gradient(right, #76b852, #8DC26F);
+background: -moz-linear-gradient(right, #76b852, #8DC26F);
+background: -o-linear-gradient(right, #76b852, #8DC26F);
+background: linear-gradient(to left, #76b852, #8DC26F);
+font-family: "Roboto",
+sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+} */
+
+input::placeholder {
+    text-align: center;
+}
+
+* {
+    font-weight: bold;
+}
+
+
+/*custom font*/
+
+
+/*basic reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+html {
+    height: 100%;
+    /*Image only BG fallback*/
+
+
+/*background = gradient + image pattern combo
+
+background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+
+}
+body {
+    font-family: montserrat, arial, verdana;
+}
+
+/*form styles*
+
+#msform {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    /*stacking fieldsets above each other*/
+
+position: relative;
+
+}
+
+/*inputs*
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+#msform .action-button {
+    width: 100px;
+    background: #27AE60;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 1px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.slide-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.slides {
+    display: none;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.caption {
+    color: #000;
+    font-size: 30px;
+    background: #cecece;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 90%;
+    text-align: center;
+    left: 4%;
+}
+.slide-no {
+    color: #FFF;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes slideInDown {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+.fade {
+    -webkit-animation-name: fade;
+    -moz-animation-name: fade;
+    -o-animation-name: fade;
+    animation-name: fade;
+    -webkit-animation-duration: 15.5s;
+    animation-duration: 15s;
+}
+img {
+    width: 1000px;
+    height: 1000px;
+}
+.amir {
+    color: darkmagenta;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    direction: rtl;
+}
+#container {
+    /* display: flex; *
+align-items: center;
+justify-content: center;
+width: 500px;
+height: 300px;
+background: #252525;
+margin: auto;
+text-align: center;
+margin-top: 12%;
+
+}
+#generateBtn {
+    outline: none;
+    margin-top: 20px;
+    background: #af0404;
+    width: 150px;
+    height: 50px;
+    font-size: 26px;
+    color: #fff;
+}
+#generateBtn:active {
+    border-style: none;
+}
+#quoteText {
+    margin-top: 50px;
+}
+#mainText {
+    margin-right: 20px;
+    color: #fff;
+    float: right;
+    font-size: 24px;
+}
+#quoteIcon {
+    margin-right: 20px;
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+body {
+    background: #ee0058;
+    font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form {
+    width: 300px;
+}
+.form .form-element {
+    position: relative;
+}
+.form .form-element input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #888;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    text-indent: 10px;
+}
+.form .form-element .toggle-password {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 3px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form .form-element .toggle-password.active i.fa-eye {
+    display: none;
+}
+.form .form-element .toggle-password.active i.fa-eye-slash {
+    display: inline;
+}
+.form .form-element .toggle-password i.fa-eye-slash {
+    display: none;
+}
+.form .form-element .password-policies {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    padding: 0px;
+    height: 0px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 300ms ease-in-out,
+    opacity 300ms ease-in-out,
+}
+.form .form-element .password-policies.active {
+    opacity: 1;
+    padding: 10px;
+    height: 180px;
+}
+.form .form-element .password-policies>div {
+    margin: 15px 10px;
+    font-weight: 600;
+    color: #888;
+}
+.form .form-element .password-policies>div.active {
+    color: #111;
+}
+#welc {
+    background-color: darkgray;
+    width: 100px;
+    height: 100px;
+}
+.sda {
+    width: 50px;
+    height: 50px;
+}
+.circle {
+    width: 15px;
+    height: 15px;
+    border: 1px solid red;
+    border-radius: 20px;
+    position: absolute;
+}
+li {
+    cursor: grab;
+}
+*/
