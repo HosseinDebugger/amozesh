@@ -1,0 +1,1313 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wor js</title>
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="work.css">
+</head>
+
+<body>
+    <!-- <div class="container ">
+        <div class="row  ">
+            <div class="col-6 w-25 bg-info  h-100 me-2 shadow rounded-3 ">
+                <i class="bi-bag-fill mt-5 fw-bold  position-absolute" style="top: -43px;"></i>
+                <ul class="list-unstyled "><br>
+                    <li class=" border-bottom border-danger  " ondragend="Myfunc()">کرم مرطوب کننده</li><br>
+                    <li class=" border-bottom border-danger" ondragend="Myfunc()">کرم آبرسان</li><br>
+                    <li class=" border-bottom border-danger" ondragend="Myfunc()"> کرم ضدآفتاب</li><br>
+                    <li class=" border-bottom border-danger" ondragend="Myfunc()">کرم بلوبری</li><br>
+
+                </ul><br><br><br>
+            </div>
+            <div class="col-6 w-25 h-100 bg-danger shadow rounded-3 ">
+                <i class="bi-bag-check-fill position-absolute"></i>
+                <ul class="list-unstyled " id="product"><br>
+                    <li class=" border-bottom border-secondary  ">محصول شماره:1</li><br>
+                    <li class=" border-bottom border-secondary ">محصول شماره:2</li><br>
+                    <li class=" border-bottom border-secondary ">محصول شماره:3</li><br>
+                    <li class=" border-bottom border-secondary ">محصول شماره:4</li><br>
+
+                </ul><br><br><br>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="bg-container">
+        <img src="" alt="" id="background">
+    </div>
+    <div class="player-container">
+        Song
+        <div class="img-container">
+            <img src="" alt="" id="cover" class="active">
+        </div>
+        <h2 id="title"></h2>
+        <h3 id="artist"></h3>
+        <audio src=""></audio> Progress
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="duration-wrapper">
+                <span id="current-time"></span>
+                <span id="duration"></span>
+            </div>
+        </div>
+        Controls
+        <div class="player-controls me-5">
+            <i class="bi bi-skip-backward" id="prev" title="Previous" style="cursor: pointer; "></i>
+            <i class="bi bi-play main-button" id="play" title="Play" style="cursor: pointer; "></i>
+            <i class="bi bi-skip-forward" id="next" title="Next" style="cursor: pointer; "></i>
+        </div>
+    </div> -->
+    <!-- موزیک پلیر -->
+    <!-- <p class="float-start">sd</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="card rounded-3 mt-5  shadow bg-info col-3 ms-3  " id="card-1" style="width: 18rem;">
+                <img src="topac.jpg" class="card-img-top rounded-3 " id="img-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block col-5">time-back</h5>
+                    <a class=" bi-play-btn rounded-3 fs-2 col col-7 float-start   " data-music="topac" onclick="myfunc(event)" id="icon-1"></a>
+                    <p>2pac</p>
+                </div>
+            </div>
+            <div class="card rounded-3 mt-5  shadow bg-info col-3 me-3 ms-3  " id="card-1" style="width: 18rem;">
+                <img src="unnamed.jpg" class="card-img-top rounded-3 " id="img-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block col-5">time-back</h5>
+                    <a class=" bi-play-btn rounded-3 fs-2 col col-7 float-start   " data-music="snop" onclick="myfunc(event)" id="icon-1"></a>
+                    <p>2pac</p>
+                </div>
+            </div>
+            <div class="card rounded-3 mt-5  shadow bg-info col-3 me-3 " id="card-1" style="width: 18rem;">
+                <img src="گلچین بهترین های امینم.jpg" class="card-img-top rounded-3" id="img-1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title d-inline-block col-5">time-back</h5>
+                    <a class=" bi-play-btn rounded-3 fs-2 col col-7 float-start   " data-music="emenem" onclick="myfunc(event)" id="icon-1"></a>
+                    <p>2pac</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="card rounded-3 mt-5  shadow bg-info col-3 ms-2  " id="card-1" style="width: 18rem;">
+                    <img src="index.jpg" class="card-img-top rounded-3 " id="img-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline-block col-5">time-back</h5>
+                        <a class=" bi-play-btn rounded-3 fs-2 col col-7 float-start   " data-music="50cent" onclick="myfunc(event)" id="icon-1"></a>
+                        <p>2pac</p>
+                    </div>
+                </div>
+                <div class="card rounded-3 mt-5  shadow bg-info col-3 me-4 ms-2   " id="bili" style="width: 18rem;">
+                    <img src="بیلی-ایلیش.jpg" class="card-img-top rounded-3 " id="img-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline-block col-5">time-back</h5>
+                        <a class=" bi-play-btn rounded-3 fs-2 col col-7 float-start   " data-music="bili" onclick="myfunc(event)" id="icon-1"></a>
+                        <p>2pac</p>
+                    </div>
+                </div>
+                <div class="card rounded-3 mt-5  shadow bg-info col-3 me-4 " id="card-1" style="width: 18rem;">
+                    <img src="XXXTentacion-ALONE-PART-3.jpg" class="card-img-top rounded-3" id="img-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline-block col-5">time-back</h5>
+                        <a class=" bi-play-btn rounded-3 fs-2 col col-7 float-start   " data-music="xxx" onclick="myfunc(event)" id="icon-1"></a>
+                        <p>2pac</p>
+                    </div>
+                </div>
+            </div>
+            <audio src="" id="aud"></audio> -->
+    <!-- مدال -->
+    <!-- <section id="sec">
+        <div class="center">
+            <h1>click the button below to pop up a Window!</h1>
+            <button type="button" id="btn">Click for modal</button>
+        </div>
+    </section>
+
+
+    <div class="modal-parent" id="modl" data-close="close">
+        <div class="modal-1" data-Nclose="no-close">
+            <p id="mfd">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in resprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit, sed do eiusmod tempor incididunt ulorem lomre t labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <span class="X" draggable="true" id="btn-close">&times;</span>
+        </div>
+    </div> -->
+
+
+    <!-- <div> -->
+
+    <!-- INPUT -->
+    <!-- <section id="home">
+            <div class="container">
+                <div class="header upper">Simple Note App</div>
+                <div class="flex">
+                    <div class="header-bar"></div>
+                </div>
+                <div class="flex row-gt-sm">
+                    <div class="flex flex-50-gt-sm">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+                            <input id="input-field" class="form-control" type="text" placeholder="Something here..">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
+                            <div id='color-select'>
+                                <div class='color-box' data-color="#fff" style="background-color: #fff;"></div>
+                                <div class='color-box' data-color="#FFD37F" a id="d" style="background-color: #FFD37F;"></div>
+                                <div class='color-box' data-color="#FFFA81" style="background-color: #FFFA81;"></div>
+                                <div class='color-box' data-color="#D5FA80" style="background-color: #D5FA80;"></div>
+                                <div class='color-box' data-color="#78F87F" style="background-color: #78F87F;"></div>
+                                <div class='color-box' data-color="#79FBD6" style="background-color: #79FBD6;"></div>
+                                <div class='color-box' data-color="#79FDFE" style="background-color: #79FDFE;"></div>
+                                <div class='color-box' data-color="#7AD6FD" style="background-color: #7AD6FD;"></div>
+                                <div class='color-box' data-color="#7B84FC" style="background-color: #7B84FC;"></div>
+                                <div class='color-box' data-color="#D687FC" style="background-color: #D687FC;"></div>
+                                <div class='color-box' data-color="#FF89FD" style=" background-color: #FF89FD;"></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto my-1 text-right ">
+                            <button id="btn-save" type="button " class="btn btn-outline-info "><span class="bi bi-plus "></span></button>
+                            <button id="btn-delete" type="button " class="btn btn-outline-danger "><span id="btn-icon "
+                  class="bi bi-eraser "></span></button>
+                        </div>
+                    </div>
+                </div>
+
+                < TASKS -->
+    <!-- <div class="flex row-gt-sm ">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+            <div class="container ">
+                <div class="row ">
+                    <div id='listed' class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 p-3 card-columns ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+
+    </section>
+    </div> -->
+    <!-- پروزه کیپ دون -->
+    <!-- 
+    <section id="starter">
+        <div id="starter-text">
+            Press any key to get the JavaScript event keycode
+        </div>
+    </section>
+
+    <div id="heading">
+        <h1>UserCode KeyCode</h1>
+    </div>
+
+    <div id="ascii">
+        <h1 id="keyCode">128</h1>
+    </div>
+
+    <div id="infos">
+        <div class="info-box">
+            <h3>event.key</p>
+                <h2 id="key">Alt</h2>
+        </div>
+
+        <div class="info-box">
+            <h3>event.location</p>
+                <h2 id="location">Alt</h2>
+        </div>
+
+        <div class="info-box">
+            <h3>event.which</p>
+                <h2 id="which">Alt</h2>
+        </div>
+
+        <div class="info-box">
+            <h3>event.code</p>
+                <h2 id="code">Alt</h2>
+        </div>
+    </div> -->
+    <!-- منو
+    <nav>
+        <div class="anim start" id="ani"></div>
+        <a href="#" id="home">خانه</a>
+        <a href="#" id="shop">فروشگاه</a>
+        <a href="#" id="basket">سبد خرید</a>
+        <a href="#" id="about">درباره ما</a>
+        <a href="#" id="contact">ارتباط با ما</a>
+    </nav> -->
+    <!-- <div class=" bg-info opacity-50" style="width: 100%;height: 3000px;"></div> -->
+    <!-- اسکرول  -->
+    <!-- <button style="position: fixed;"> clicke</button> -->
+    <!--  نو بار اسکرول -->
+    <!-- 
+    <nav id="mainNav">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="logo">
+            <a href="#">
+                <img src="Black.png" alt="UserCode Logo">
+            </a>
+        </div>
+    </nav>
+
+    <section>Section 1</section>
+    <section>Section 2</section>
+    <section>Section 3</section>
+    <button class="btn-primary me-5">Go To</button>
+
+    <footer>This site Designed by UserCode :)</footer>
+
+ -->
+    <!-- <h1 class="stud">Hi frins</h1> -->
+
+
+    <!--     
+    <h1 class="top-center-title">Virtual Keyboard</h1>
+
+    <div class="display" id="display"></div>
+
+    <div class="keyboard" id="keyBord">
+        <table class="center">
+            <tr>
+                <!-- Numbers
+    <td>
+        <button id="btn" data-key="1"> 
+	            <svg
+				
+				    data-key="1"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-1"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M13 20v-16l-5 5" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn" data-key="2">
+	            <svg 
+				data-key="2"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-2"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M8 8a4 4 0 1 1 8 0c0 1.098 -.564 2.025 -1.159 2.815l-6.841 9.185h8"
+	                />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn3" data-key="3">
+	            <svg 
+				data-key="3"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-3"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M12 12a4 4 0 1 0 -4 -4" />
+	                <path d="M8 16a4 4 0 1 0 4 -4" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn4" data-key="4">
+	            <svg
+				data-key="4"
+
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-4"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M15 20v-15l-8 11h10" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn5" data-key="5">
+	            <svg
+				data-key="5"
+
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-5"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M8 20h4a4 4 0 1 0 0 -8h-4v-8h8" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn6" data-key="6">
+	            <svg
+				data-key="6"
+
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-6"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M8 16a4 4 0 1 0 8 0v-1a4 4 0 1 0 -8 0" />
+	                <path d="M16 8a4 4 0 1 0 -8 0v8" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn7" data-key="7">
+	            <svg
+				data-key="7"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-7"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M8 4h8l-4 16" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn8" data-key="8">
+	            <svg
+				data-key="8"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-8"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <circle cx="12" cy="8" r="4" />
+	                <circle cx="12" cy="16" r="4" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn9" data-key="9">
+	            <svg
+				data-key="9"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-9"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M16 8a4 4 0 1 0 -8 0v1a4 4 0 1 0 8 0" />
+	                <path d="M8 16a4 4 0 1 0 8 0v-8" />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btn0" data-key="0">
+	            <svg
+				data-key="0"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-number-0"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M16 16v-8" />
+	                <path
+	                d="M12 20a4 4 0 0 0 4 -4v-8a4 4 0 1 0 -8 0v8a4 4 0 0 0 4 4z"
+	                />
+	            </svg>
+	            </button>
+    </td>
+    <td>
+        <button id="btnClear" data-clear="btn-clear">
+	            <svg
+				data-key="btn-clear"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-square-x"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#000000"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <rect x="4" y="4" width="16" height="16" rx="2" />
+	                <path d="M10 10l4 4m0 -4l-4 4" />
+	            </svg>
+	            </button>
+    </td>
+    </tr>
+    <!-- First Row of letters 
+    <tr>
+        <td>
+            <button id="btnQ" data-key="Q">
+	            <svg
+				data-key="Q"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-q"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-6"
+	                />
+	                <line x1="13" y1="15" x2="18" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnW" data-key="W">
+	            <svg
+				data-key="W"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-w"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M4 4l4 16l4 -14l4 14l4 -16" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnE" data-key="E"> 
+	            <svg
+				data-key="E"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-e"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M17 4h-10v16h10" />
+	                <line x1="7" y1="12" x2="15" y2="12" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnR" data-key="R">
+	            <svg
+				data-key="R"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-r"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16h5.5a4 4 0 0 1 0 9h-5.5" />
+	                <line x1="12" y1="13" x2="17" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnT" data-key="T">
+	            <svg
+				data-key="T"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-t"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="6" y1="4" x2="18" y2="4" />
+	                <line x1="12" y1="4" x2="12" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnY" data-key="Y">
+	            <svg
+				data-key="Y"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-y"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4l5 9l5 -9" />
+	                <line x1="12" y1="13" x2="12" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnU" data-key="U">
+	             <svg
+				 data-key="U"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-u"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M6 4v11a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-11" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnI" data-key="I">
+	            <svg
+				data-key="I"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-i"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="12" y1="4" x2="12" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnO" data-key="O">
+	            <svg
+				data-key="O"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-o"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-6"
+	                />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnP" data-key="P">
+						
+	            <svg
+				data-key="P"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-p"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#2c3e50"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16h5.5a4 4 0 0 1 0 9h-5.5" />
+	            </svg>
+	            </button>
+        </td>
+    </tr>
+    <!-- Second row of letter 
+    <tr>
+        <td>
+            <button id="btnA" data-key="A">
+	            <svg
+				data-key="A"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-a"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-12a4 4 0 0 1 4 -4h2a4 4 0 0 1 4 4v12" />
+	                <line x1="7" y1="13" x2="17" y2="13" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnS" data-key="S">
+	            <svg
+				data-key="S"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-s"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M17 8a4 4 0 0 0 -4 -4h-2a4 4 0 0 0 0 8h2a4 4 0 0 1 0 8h-2a4 4 0 0 1 -4 -4"
+	                />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnD" data-key="D">
+	            <svg
+				data-key="D"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-d"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4h6a5 5 0 0 1 5 5v6a5 5 0 0 1 -5 5h-6v-16" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnF" data-key="F">
+	            <svg
+				data-key="F"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-f"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M17 4h-10v16" />
+	                <line x1="7" y1="12" x2="15" y2="12" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnG" data-key="G">
+	            <svg
+				data-key="G"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-g"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5v-2h-4"
+	                />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnH" data-key="H">
+	            <svg
+				data-key="H"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-h"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="17" y1="4" x2="17" y2="20" />
+	                <line x1="7" y1="12" x2="17" y2="12" />
+	                <line x1="7" y1="4" x2="7" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnJ" data-key="J">
+	            <svg
+				data-key="J"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-j"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M17 4v12a4 4 0 0 1 -4 4h-2a4 4 0 0 1 -4 -4" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnK" data-key="K">
+	            <svg
+				data-key="K"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-k"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="7" y1="4" x2="7" y2="20" />
+	                <path d="M7 12h2l8 -8" />
+	                <line x1="9" y1="12" x2="17" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnL" data-key="L">
+	            <svg
+				data-key="L"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-l"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4v16h10" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnColon" style="font-size: 40px; width: 60px" data-key=";">
+	            ;
+	            </button>
+        </td>
+        <td>
+            <button id="btnQuote" style="font-size: 40px; width: 60px" data-key="..">
+	            "
+	            </button>
+        </td>
+    </tr>
+    <!-- Thirs row of letter 
+    <tr>
+        <td>
+            <button id="btnZ" data-key="Z">
+	            <svg
+				data-key="Z"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-z"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 4h10l-10 16h10" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnX" data-key="X">
+	            <svg
+				data-key="X"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-x"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <line x1="7" y1="4" x2="17" y2="20" />
+	                <line x1="17" y1="4" x2="7" y2="20" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnC" data-key="C">
+	            <svg
+				data-key="C"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-c"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path
+	                d="M18 9a5 5 0 0 0 -5 -5h-2a5 5 0 0 0 -5 5v6a5 5 0 0 0 5 5h2a5 5 0 0 0 5 -5"
+	                />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnV" data-key="V">
+	            <svg
+				data-key="V"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-v"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M6 4l6 16l6 -16" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnB" data-key="B">
+	            <svg
+				data-key="B"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-b"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16h6a4 4 0 0 1 0 8a4 4 0 0 1 0 8h-6" />
+	                <line x1="7" y1="12" x2="13" y2="12" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnN" data-key="N">
+	            <svg
+				data-key="N"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-n"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M7 20v-16l10 16v-16" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnM" data-key="M">
+	            <svg
+				data-key="M"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-letter-m"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="currentColor"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M6 20v-16l6 14l6 -14v16" />
+	            </svg>
+	            </button>
+        </td>
+        <td>
+            <button id="btnComma" style="font-size: 42px; width: 60px" data-key=",">
+						
+	            ,
+	            </button>
+        </td>
+        <td>
+            <button id="btnPeriod" style="font-size: 42px; width: 60px" data-key=".">
+	            .
+	            </button>
+        </td>
+        <td>
+            <button id="btnSlash" style="font-size: 42px; width: 60px" data-key="/">
+	            /
+	            </button>
+        </td>
+        <td rowspan="2">
+            <button style="height: 120px" id="btnRtrn" data-key="
+					">
+	            <svg
+				data-key="
+				"
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-corner-down-left"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#2c3e50"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M18 6v6a3 3 0 0 1 -3 3h-10l4 -4m0 8l-4 -4" />
+	            </svg>
+	            </button>
+        </td>
+    </tr>
+    < Space bar divs -
+    <tr>
+        <td></td>
+        <td></td>
+
+        <td colspan="5">
+            <button style="width: 250px" id="btnSpace" data-key=" ">
+	            <svg
+				data-key=" "
+
+	                xmlns="http://www.w3.org/2000/svg"
+	                class="icon icon-tabler icon-tabler-space"
+	                width="44"
+	                height="44"
+	                viewBox="0 0 24 24"
+	                stroke-width="1.5"
+	                stroke="#2c3e50"
+	                fill="none"
+	                stroke-linecap="round"
+	                stroke-linejoin="round"
+	            >
+	                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	                <path d="M4 10v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1 -1v-3" />
+	            </svg>
+	            </button>
+        </td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+    </div> -->
+
+    <!-- <div class="center" id="parent">
+        <div class="form">
+            <div class="form-element">
+                <input id="password-field" />
+                <div class="toggle-password" id="fsd">
+                    <i class="bi-eye active"></i>
+                    <i class="bi-eye-slash"></i>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- 
+    <div class="container">
+        <h3 class="text-center text-white">خرید آنلاین بلیط هواپیما</h3>
+        <div class="box-center">
+            <br>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="mb-3  text-white form-div">
+                        <label class="form-label text-center">نام </label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="mb-3  text-white form-div">
+                        <label class="form-label text-center"> نام خانوادگی</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="mb-3  text-white form-div">
+                        <label class="form-label text-center">شماره تماس</label>
+                        <input type="number" class="form-control">
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="mb-3  text-white form-div">
+                        <label class="form-label text-center">ایمیل</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="mb-3  text-white form-div">
+                        <label class="form-label text-center">کشور</label>
+                        <select class="form-select" id="country">
+                        <option value="iran"  selected>ایران</option>
+                        <option value="usa">آمریکا</option>
+                        <option value="turkey">ترکیه</option>
+                    </select>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="mb-3  text-white form-div">
+                        <label class="form-label text-center">شهر</label>
+                        <select class="form-select" id="city">
+                        
+                    </select>
+                    </div>
+
+                </div>
+            </div>
+            <br><br>
+            <button type="button" class="btn btn-warning w-100 p-3">پرداخت و رزرو</button>
+        </div>
+    </div> -->
+    <h1 class="title">Task Management</h1>
+    <div class="datas">
+        <p id="pi">sd</p>
+        <input type="text" class="input task" placeholder="وظیفه مورد نظر" id="ValuePlus" />
+        <select class="users-select input" id="select"> 
+        <option value="none">کارمند مورد نظر</option>
+      </select>
+        <input type="button" value="ثبت" class="btn input" />
+    </div>
+
+    <div class="users">
+        <div class="user user-ali">
+            <h4>علی</h4>
+        </div>
+        <div class="user user-amin">
+            <h4>امین</h4>
+        </div>
+        <div class="user user-mmd">
+            <h4>محمد</h4>
+        </div>
+        <div class="user user-babak">
+            <h4>بابک</h4>
+        </div>
+    </div>
+
+    <div class="tasks">
+        <div class="user-tasks ali-tasks">
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>محتوا</h4>
+            </div>
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>هدر</h4>
+            </div>
+        </div>
+        <div class="user-tasks amin-tasks">
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>پیج</h4>
+            </div>
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>چنل</h4>
+            </div>
+        </div>
+        <div class="user-tasks mmd-tasks">
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>جی اس</h4>
+            </div>
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>ویو</h4>
+            </div>
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>فوتر</h4>
+            </div>
+        </div>
+        <div class="user-tasks babak-tasks">
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>گیت</h4>
+            </div>
+            <div class="main-task">
+                <i class="bi-trash"></i>
+                <h4>انگیولار</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js "></script>
+
+
+
+    <script src="work.js "></script>
+</body>
+
+</html>
+
+</html>
