@@ -1,0 +1,916 @@
+    /* @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+ html {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+     min-height: 100vh;
+     background: #c9ced3;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: Nunito, sans-serif;
+     font-size: 12px;
+ }
+ 
+ .bg-container {
+     position: fixed;
+     top: -50%;
+     left: -50%;
+     width: 200%;
+     height: 200%;
+     z-index: -1;
+ }
+ 
+ .bg-container img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     margin: auto;
+     min-width: 50%;
+     min-height: 50%;
+     filter: blur(15px);
+     -webkit-filter: blur(50px);
+     transform: scale(1.1);
+ }
+ 
+ .player-container {
+     height: 500px;
+     width: 400px;
+     background: #e7e7e7;
+     border-radius: 20px;
+     box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
+ }
+ 
+ .img-container {
+     width: 300px;
+     height: 300px;
+     position: relative;
+     top: -50px;
+     left: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .img-container img {
+     height: 0;
+     width: 0;
+     opacity: 0;
+     object-fit: cover;
+     border-radius: 20px;
+     box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.5);
+     transition: .5s;
+ }
+ 
+ .img-container img.active {
+     transition: .5s;
+     opacity: 1;
+     width: 100%;
+     height: 100%;
+ }
+ 
+ h2 {
+     font-size: 25px;
+     text-align: center;
+     margin: 0;
+ }
+ 
+ h3 {
+     font-size: 20px;
+     text-align: center;
+     font-weight: 400;
+     margin: 5px 0 0;
+ }
+ /* Progress */
+    /*  
+ .progress-container {
+     background: #fff;
+     border-radius: 5px;
+     cursor: pointer;
+     margin: 40px 20px;
+     height: 4px;
+     width: 90%;
+ }
+ 
+ .progress {
+     background: #242323;
+     border-radius: 5px;
+     height: 100%;
+     width: 0%;
+     transition: width 0.1s linear;
+ }
+ 
+ .duration-wrapper {
+     position: relative;
+     top: -25px;
+     display: flex;
+     justify-content: space-between;
+ }
+ Controls
+ 
+ .player-controls {
+     position: relative;
+     top: -15px;
+     left: 120px;
+     width: 200px;
+ }
+ 
+ .fas {
+     font-size: 30px;
+     color: rgb(129, 129, 129);
+     margin-right: 30px;
+     cursor: pointer;
+     user-select: none;
+ }
+ 
+ .fas:hover {
+     filter: brightness(80%);
+ }
+ 
+ .main-button {
+     font-size: 40px;
+     position: relative;
+     top: 3px;
+ }
+ /* Media Query: iPhone (Vertical) */
+    /*  
+ @media screen and (max-width: 376px) {
+     .player-container {
+         width: 95vw;
+     }
+     .img-container {
+         left: 29px;
+     }
+     h2 {
+         font-size: 20px;
+     }
+     h3 {
+         font-size: 15px;
+     }
+     .player-controls {
+         top: -10px;
+         left: 100px;
+     }
+ } */
+    /* موزیک پلیر */
+    /* #card-1:hover {
+
+     transition: 0.50s;
+     transform: skewX(10deg);
+ }
+ 
+ #icon-1 {
+     cursor: pointer;
+     margin-right: -130px;
+ }
+ 
+ #img-1:hover {
+     background-color: aqua;
+ }
+ 
+ #bili {
+     transition: 0.50s;
+     transform: skewX(10deg);
+ }
+ 
+ body {
+     background-color: darkorchid;
+ } */
+    /* مدال */
+    /* * {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     background: rgba(19, 19, 23, 0.9);
+ }
+ 
+ section {
+     background-image: url("modal-background.png");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100vh;
+     width: 100%;
+ }
+ 
+ .center {
+     color: white;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ h1 {
+     text-align: center;
+     font-size: 50px;
+     font-family: sans-serif;
+     margin: 40px;
+     text-transform: capitalize;
+ }
+ 
+ button {
+     margin: 0 auto;
+     height: 60px;
+     width: 500px;
+     background: #5454ff;
+     border: none;
+     border-radius: 6px;
+     font-size: 25px;
+     color: #000;
+     cursor: pointer;
+ }
+ 
+ .modal-parent {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100vh;
+     width: 100%;
+     display: none;
+ }
+ 
+ .modal-1 {
+     background: white;
+     width: 70%;
+     padding: 30px;
+     border-radius: 6px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 22px;
+     font-family: arial;
+     position: relative;
+     animation: 0.5s drop;
+ }
+ 
+ @keyframes drop {
+     0% {
+         top: -100px;
+     }
+     100% {
+         top: 50%;
+     }
+ }
+ 
+ .X {
+     position: absolute;
+     right: 20px;
+     top: 5px;
+     font-size: 40px;
+     cursor: pointer;
+ }
+ 
+ section {
+     transition: 2s;
+ } */
+    /* نوت  */
+    /* :root {
+     --detail-color: #D10294;
+     --section-color: #616161;
+     --white-color: #F8F8FF;
+     --header-color: #444649;
+ }
+ 
+ body {
+     color: var(--white-color);
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     margin: 0px;
+     font-size: 8pt;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     overflow-x: hidden;
+ }
+ 
+ section {
+     padding: 70px 0 70px 0;
+     color: var(--section-color);
+     line-height: 11pt;
+     position: relative;
+ }
+ 
+ section .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 10px;
+     width: 100%;
+     box-sizing: border-box;
+ }
+ 
+ section .flex-50-gt-sm {
+     display: block;
+ }
+ 
+ section:nth-of-type(2) {
+     height: calc(78.3vh + 53px);
+ }
+ 
+ .flex {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .flex.wrap {
+     flex-wrap: wrap;
+ }
+ 
+ .flex.row {
+     flex-direction: row;
+ }
+ 
+ .header {
+     font-size: 25pt;
+     position: relative;
+     color: var(--header-color);
+     position: relative;
+ }
+ 
+ .header-bar {
+     margin: 25px 0 60px 0;
+     width: 70px;
+     height: 4px;
+     background: var(--header-color);
+ }
+ 
+ .highlight {
+     color: var(--detail-color);
+ }
+ 
+ .label {
+     font-size: 14pt;
+     font-weight: 500;
+ }
+ 
+ .upper {
+     text-transform: uppercase;
+ }
+ 
+ @media screen and (min-width: 290px) {
+     .header {
+         font-size: 18pt;
+     }
+ }
+ 
+ @media screen and (min-width: 600px) {
+     body {
+         font-size: 12pt;
+     }
+     section {
+         line-height: 18pt;
+         padding: 100px 0 130px 0;
+     }
+     section .container {
+         padding: 0 10px;
+     }
+     .container {
+         padding: 0 20px;
+     }
+     .header {
+         font-size: 30pt;
+     }
+     .header-bar {
+         margin: 25px 0 50px 0;
+     }
+     .label {
+         font-size: 18pt;
+     }
+ }
+ 
+ @media screen and (min-width: 960px) {
+     .flex.row-gt-sm {
+         flex-direction: row;
+     }
+     .flex-50-gt-sm {
+         -webkit-flex: 1 1 50%;
+         -ms-flex: 1 1 50%;
+         flex: 1 1 50%;
+         max-width: 50%;
+         max-height: 100%;
+         box-sizing: border-box;
+     }
+ }
+ 
+ .within-list {
+     cursor: pointer;
+ }
+ 
+ .card-columns {
+     @include media-breakpoint-only(lg) {
+         column-count: 4;
+     }
+     @include media-breakpoint-only(xl) {
+         column-count: 5;
+     }
+ }
+ 
+ #listed:nth-child(odd):hover {
+     cursor: pointer;
+ }
+ 
+ #color-select {
+     display: flex;
+     padding: 5px 10px 0 0;
+ }
+ 
+ .color-box {
+     border: solid 1px #929292;
+     border-radius: 50%;
+     height: 18px;
+     width: 18px;
+     margin-left: 5px;
+ }
+ 
+ .Add {
+     overflow: hidden;
+     max-width: 240px;
+     min-height: 50px;
+     margin: 50px;
+     font-style: italic;
+     font: bolder;
+     border: 2px solid royalblue;
+ } */
+    /* کیپ دون */
+    /*  
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: IranSans
+ }
+ 
+ @font-face {
+     font-family: IranSans;
+     src: url(../fonts/IRANSansWeb.ttf);
+ }
+ 
+ body {
+     background: #d1d0d0;
+ }
+ 
+ #heading {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 60px;
+     height: 100px;
+ }
+ 
+ #heading h1 {
+     font-weight: bold;
+     font-size: 50px;
+ }
+ 
+ #ascii {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 100px;
+     color: rgb(100, 98, 98);
+ }
+ 
+ #infos {
+     display: flex;
+     justify-content: space-evenly;
+ }
+ 
+ .info-box {
+     text-align: center;
+     width: 100%;
+     border: 1px solid #ccc;
+ }
+ 
+ .info-box h3 {
+     background: #b9e9ff;
+     border-bottom: 2px solid #b9e9ff;
+     padding: 5px;
+     font-weight: bold;
+ }
+ 
+ .info-box h2 {
+     background: #fff;
+     padding: 5px;
+ }
+ 
+ #heading,
+ #ascii,
+ #infos {
+     display: none;
+ }
+ 
+ #starter {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+     font-weight: bolder;
+     height: 100vh;
+ }
+ 
+ #starter #starter-text {
+     background: #fff;
+     padding: 10px;
+ } */
+    /* منو * {
+ 
+ margin: 0;
+ padding: 0;
+ direction: rtl;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2124;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 600px;
+    height: 50px;
+    position: relative;
+    background-color: #333;
+}
+nav a {
+    font-size: 20px;
+    color: #f4f4f4;
+    line-height: 50px;
+    text-align: center;
+    z-index: 1;
+    padding: 0 20px;
+}
+.anim {
+    position: absolute;
+    height: 100%;
+    /* /* z-index: 0;
+    border-radius: 8px;
+    transition: margin .5s;
+    background-color: #f68657;
+    width: 78px;}
+*/
+    /* ناو بار اسکرول */
+    /* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+#mainNav .logo img {
+    height: 84px;
+    transition: height 0.4s;
+}
+
+#mainNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    position: ;
+    width: 100%;
+    top: 0;
+    background-color: rgb(104, 36, 36)104, 36, 36);
+    transition: 0.4s;
+}
+
+section {
+    height: 300px;
+    padding: 16px;
+    font-size: 20px;
+}
+
+section:nth-of-type(1) {
+    margin-top: 84px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #eee;
+    color: #333;
+}
+
+section:nth-of-type(even) {
+    background-color: #333;
+    color: #eee;
+}
+
+footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: pink;
+}
+
+#mainNav ul {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
+
+#mainNav ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.4s;
+}
+
+.bg-black {
+    background: #333 !important;
+}
+
+.txt-white a {
+    color: #eee !important;
+}
+
+.menoS {
+    background-color: slategrey;
+    position: fixed;
+}
+
+*/
+    /* .stud {
+    color: blueviolet;
+    margin: 50px;
+} */
+    /* 
+body {
+    font-family: IRANSans;
+}
+
+.display {
+    border: 3px solid #0d0dfa;
+    border-radius: 10px;
+    height: 200px;
+    width: 50%;
+    background-color: #ffffff;
+    margin: auto;
+    font-size: 22px;
+    padding: 22px;
+}
+
+.keyboard {
+    background-color: #ffffff;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 5px black;
+    padding: 10px;
+}
+
+h1.top-center-title {
+    color: #0d0dfa !important;
+}
+
+button {
+    background: #fff !important;
+    border: 1px dashed #0d0dfa;
+    border-radius: 7px !important;
+    box-shadow: 0 0 2px #000;
+} */
+    /* body {
+    background: #ee0058;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.center {
+    position: absolute; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    width: 300px;
+}
+
+.form .form-element {
+    position: relative;
+}
+
+.form .form-element input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #888;
+    background: #f5f5f5;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    text-indent: 10px;
+}
+
+.form .form-element .toggle-password {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 3px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form .form-element .toggle-password.active i.bi-eye {
+    display: none;
+}
+
+.form .form-element .toggle-password.active i.bi-eye-slash {
+    display: inline;
+}
+
+.form .form-element .toggle-password i.bi-eye-slash {
+    display: none;
+}
+
+.form .form-element .password-policies {
+    position: relative;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    padding: 0px;
+    height: 0px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    opacity: 1;
+    overflow: hidden;
+    transition: height 300ms ease-in-out, opacity 300ms ease-in-out,
+}
+
+.form .form-element .password-policies.active {
+    opacity: 1;
+    padding: 10px;
+    height: 180px;
+}
+
+.form .form-element .password-policies>div {
+    margin: 15px 10px;
+    font-weight: 600;
+    color: #888;
+}
+
+.form .form-element .password-policies>div.active {
+    color: #111;
+} */
+    /* * {
+        font-family: IRANSans;
+    }
+    
+    body {
+        background: url("1.jpg");
+        background-size: cover;
+    }
+    
+    .box-center {
+        border-radius: 14px;
+        border: 3px solid #fff;
+        padding: 30px;
+        margin-top: 35px;
+        background: #0a0a0aa1;
+    }
+    
+    .form-div {
+        font-size: 18px;
+        color: #fff !important;
+    } */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: iransans;
+    }
+    
+    @font-face {
+        src: url(../font/IRANSans/ttf/IRANSansWeb.ttf);
+        font-family: iransans;
+    }
+    
+    body {
+        direction: rtl;
+        background-color: #333;
+    }
+    
+    .title {
+        text-align: center;
+        margin-top: 2rem;
+        color: #fff;
+    }
+    
+    .datas {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .input {
+        width: 16rem;
+        height: 40px;
+        outline: none;
+        font-size: .90rem;
+    }
+    
+    .task {
+        padding: 8px;
+    }
+    
+    .input:focus {
+        outline: none;
+    }
+    
+    .btn {
+        color: #fff;
+        background: #66A182;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .users {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3rem;
+    }
+    
+    .user {
+        color: #fff;
+        width: 9.5rem;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .user-ali {
+        background-color: #3bec24;
+        border: 2px solid #32dd1b;
+    }
+    
+    .user-amin {
+        background-color: #ec7024;
+        border: 2px solid #d46018;
+    }
+    
+    .user-mmd {
+        background-color: #d524ec;
+        border: 2px solid #c11dd6;
+    }
+    
+    .user-babak {
+        background-color: #24a0ed;
+        border: 2px solid #1a86c9;
+    }
+    
+    .tasks {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+    
+    .user-tasks {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-task {
+        color: #fff;
+        width: 9.5rem;
+        text-align: center;
+        border: 1px solid #ec24a0;
+        padding: 10px;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    i {
+        cursor: pointer;
+    }
