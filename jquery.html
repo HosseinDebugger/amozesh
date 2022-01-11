@@ -1,0 +1,1586 @@
+<!-- !!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="jquery.css">
+    <title>amozeshe jquery</title>
+</head>
+
+<body>
+
+    <!-- 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+
+                <div class="well" id="IdSelector">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_1">
+                            Id Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+
+                <div class="well test">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_2">
+                            Class Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_3">
+                            All Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" TestName="TestValue Hello">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_4">
+                            Attribute Contains Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" WordName="WordValue Test">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_5">
+                            Attribute Contains Word Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" EndWith="Hello Mohammad">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_6">
+                            Attribute Ends With Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" Equal="Hello">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_7">
+                            Attribute Equal Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well" StartWith="Hello Mohammad">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_8">
+                            Attribute Start With Selector
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_9">
+                            Button Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="button" value="input button">
+
+                        <button> button </button>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_10">
+                            checkbox Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="checkbox">checkbox
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_11">
+                            Parent > Child Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="Parent">
+                        <p class="test">1</p>
+                        <p>2</p>
+                        <p class="test">3</p>
+                        <p>4</p>
+                        <p class="test">5</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_12">
+                            Contains Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="Contains">
+                        test
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_13">
+                           Descendant Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="descendantId">
+                        <p>1</p>
+                        <p>2</p>
+                        <div>
+                            <p>test</p>
+                        </div>
+                        <p>3</p>
+                        <p>4</p>
+                        <p>5</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_14">
+                            disabled Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="button" disabled value="disabled">
+                        <input type="button" value="notdisabled">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_15">
+                            enabled Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="button" value="enabled">
+                        <input type="button" disabled value="notenabled">
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-warning btn-block" id="Button_16">
+                            empt Selector
+                        </a>
+                    </div>
+                    <div class="col-md-9 alert alert-warning"></div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_17">
+              eq() =>  index Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="indexSelector">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_18">
+              even Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="evenSelector">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_19">
+              file Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="fileSelector">
+            <input type="file" value="file Selector">
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_20">
+              filrt-child Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="childSelector">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="well" id="firstTypeSelector">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_21">
+                first-Type Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="col-md-9">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+
+            <p>3</p>
+            <p>4</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="well" id="firstSelector">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_22">
+                first Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="col-md-9">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+
+            <p>3</p>
+            <p>4</p>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="well" id="greaterthanSelector">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_23">
+                    greater than Selector
+                </a>
+        </div>
+        <div class="col-md-9">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="well" id="greaterthanSelector">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_23">
+                greater than Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_24">
+                Has Attribute Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="alert alert-warning" HasAttribute="HasAttribute">test</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_25">
+                :has()  Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="hasClass">
+                <p>
+                    Hello in a paragraph
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_26">
+                last child Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="LastChild">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_27">
+                last of type Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="LastOfType">
+            <div>
+                <p>0</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+            <div>
+                <p>0</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_28">
+                last Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="LastSelector">
+            <div>
+                <p>0</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+            <div>
+                <p>0</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_29">
+                :ls() => Less Than Selector
+            </a>
+        </div>
+        <div class="col-md-9" id="LessThan">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_30">
+                multiple Attribute Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="MultipleAttribute" multipleAttribute="Test">
+                <p>
+                    Hello in a paragraph
+                </p>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_31">
+                multiple Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div class="MultipleSelector">
+                division with class
+            </div>
+
+            <p id="MultipleSelector">
+                paragraph with id
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_32">
+                next adjacent Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="NextAdjacent">
+                main selector
+            </div>
+            <div>
+                division with class
+            </div>
+            <p>
+                paragraph with id
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_33">
+                next siblings Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="NextSiblings"></div>
+            <div>
+                division with class
+            </div>
+            <p>
+                paragraph with id
+            </p>
+            <p>
+                paragraph with id
+            </p>
+            <p>
+                paragraph with id
+            </p>
+            <p>
+                paragraph with id
+            </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_34">
+                :not() Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="NotSelector">
+                <div>
+                    <input type="checkbox" name="a">
+                    <span>ایمان</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="b">
+                    <span>محمد</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="c" checked="checked">
+                    <span>سهیل</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_35">
+                :nth-child() Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="nth_Child">
+                <div>
+                    <ul>
+                        <li>محمد</li>
+                        <li>میلاد</li>
+                        <li>علی</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>سبحان</li>
+                        <li>مرتضی</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>الناز</li>
+                        <li>سارا</li>
+                        <li>سمیه</li>
+                        <li>فائزه</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_36">
+                :nth-last-child() Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="nth_Last_Child">
+                <div>
+                    <ul>
+                        <li>محمد</li>
+                        <li>میلاد</li>
+                        <li>علی</li>
+                        <li>رضا</li>
+                        <li>عباس</li>
+                        <li>سمیرا</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>سبحان</li>
+                        <li>مرتضی</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>الناز</li>
+                        <li>سارا</li>
+                        <li>سمیه</li>
+                        <li>فائزه</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_37">
+                :nth-of-type() Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="nth_Of_Type">
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+                <hr>
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+                <hr>
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_38">
+                :nth-last-of-type() Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="nth_Last_Of_Type">
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+                <hr>
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+                <hr>
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_39">
+                :only-child Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="Only_Child">
+                <div>
+                    <ul>
+                        <li>محمد</li>
+                        <li>میلاد</li>
+                        <li>علی</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>سبحان</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>سبحان</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>سبحان</li>
+                        <li>مرتضی</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <ul>
+                        <li>الناز</li>
+                        <li>سارا</li>
+                        <li>سمیه</li>
+                        <li>فائزه</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_40">
+                :only-of-type Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="Only_Of_Type">
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <b>bold 2</b>
+                    <span>span</span>
+                </div>
+                <hr>
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+                <hr>
+                <div>
+                    <p>paragraph</p>
+                    <span>test</span>
+                    <p>paragraph</p>
+                    <b>bold</b>
+                    <span>span</span>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <style>
+        td {
+            width: 40px;
+            height: 40px;
+            background: green;
+        }
+    </style>
+
+    <div class="well">
+        <div class="col-md-3 pull-left">
+            <a class="btn btn-warning btn-block" id="Button_41">
+                :parent Selector
+            </a>
+        </div>
+        <div class="col-md-9">
+            <div id="Parent_Selector">
+                <table class="border-1">
+                    <tr>
+                        <td>mohammad</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ali</td>
+                        <td> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    </div>
+    </div>
+    </div> -->
+    <!-- <button class="btn-info" id="btn">click</button>
+
+    <input type="text" name="" id="keyup">
+    <p id="texr">
+    </p> -->
+    <!-- سلکت -->
+    <!-- <select name="" id="selec">
+        <option value="dx">amir</option>
+        <option value="sd">amirs</option>
+        <option value="sd">amirt</option>
+    </select>
+    <p id="csd"> </p> -->
+    <!-- ایونت سلکت -->
+    <!-- <input type="text" name="" value="amir" disabled id="inp"> -->
+    <!-- of on one trigger روییداد-->
+    <!-- <button id="btn"> click and hover</button> -->
+
+    <!-- <div class="col-md-9" id="myDeletegate">
+        <button class="mybutton btn btn-success btn-block">my button</button>
+    </div>
+    <div class="col-md-12">
+        <div class="well">
+            <div class="col-md-3 pull-left">
+                <a class="btn btn-success btn-block" id="data">
+                    data
+                </a>
+            </div> -->
+    <!-- which -->
+    <!-- <input type="text" name="" id="inp"> -->
+    <!-- <button class="btn-dark" id="btn">click</button>
+    <p class="text-danger" id="text">Hello World</p> -->
+    <!-- <div class="bg-info " id="div" style="width: 50px ;height: 50px;"></div> -->
+
+    <!-- <div class="bg-info w-50 h-50">e
+        <button id="btn" class="btn-dark m-5 mt-4 ms-4 p- ">click</button>
+    </div> -->
+    <!-- <div class="well" id="div">
+        <p>amir </p>
+        <button id="btn">click</button>
+        <input type="text" name="" id="inp">
+    </div> -->
+    <!-- <button id="btn">click</button>
+    <p id="paragraf"> hello guys</p>
+    <div id="appen"></div>
+    <p id="str">hello</p> -->
+
+    <!-- apped and prepend -->
+    <!-- <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="AppendButton">
+                            Append
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="AppendTest">
+                        <strong id="strong">hello</strong>
+                        <p id="para">mohammad</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="AppendToButton">
+                            Append To
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="AppendToTest">
+                        <p>test for adding element inside of another elemenet</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="PrependButton">
+                            Prepend
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="PrependTest">
+                        <strong id="strong_Pre">hello</strong>
+                        <p id="para_Pre">mohammad</p>
+                        <p>ali</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="PrependToButton">
+                            Prepend To
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="PrependToTest">
+                        <p>test for adding element inside of another elemenet</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="HtmlButton">
+                            Html
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="HtmlTest">
+                        <p id="html_para">we can get or set body of an element by html function</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="TextButton">
+                            Text
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="TextTest">
+
+                        <p>get text from element</p>
+                        <p>get text from element</p>
+                        <p>get text from element</p>
+                        <p>get text from element</p>
+                        <h4>get text from element</h4>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div> -->
+
+    <!--  remove and empty -->
+    <!-- <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="EmptyButton">
+                            Empty
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="EmptyTest">
+                        <strong>hello</strong>
+                        <p>mohammad</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="RemoveButton">
+                            Remove
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="RemoveTest">
+                        <strong>hello</strong>
+                        <p>mohammad</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="DetachButton">
+                            Detach
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="DetachTest">
+                        <strong>hello</strong>
+                        <p>mohammad</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="ReplaceAllButton">
+                            ReplaceAll
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="ReplaceAllTest">
+                        <strong>hello</strong>
+                        <p>mohammad</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="ReplaceWithButton">
+                            ReplaceWith
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="ReplaceWithTest">
+                        <strong id="strong">hello</strong>
+                        <p id="para">mohammad</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <p id="demo"> This is a paragraph. </p>
+    <div id="back"></div>
+
+    <button id="Button1"> برای پاک شدن پاراگراف کلیک نمایید</button>
+    <button id="Button2"> برای وارد کردن مجدد پاراگراف کلیک نمایید</button> -->
+
+    <!-- show an hidide  -->
+    <!-- <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="ShowButton">
+                            Show
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="ShowTest">
+                        <p>mohammad</p>
+                        <p style="display: none;">ali</p>
+                        <p style="display: none;">ali</p>
+                        <p style="display: none;">ali</p>
+                        <p style="display: none;">ali</p>
+                        <p style="display: none;">ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="HideButton">
+                            Hide
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="HideTest">
+                        <p>mohammad</p>
+                        <p>ali</p>
+                        <p>ali</p>
+                        <p>ali</p>
+                        <p>ali</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="ToggleButton">
+                            Toggle
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="ToggleTest">
+                        <p>mohammad</p>
+                        <p>ali</p>
+                        <p style="display: none;">display none</p>
+                        <p>ali</p>
+                        <p>ali</p>
+                        <p>ali</p>
+
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> -->
+
+    <!-- slider -->
+    <!-- 
+    <style>
+        #SlideDownTest p {
+            display: none;
+        }
+        
+        #SlideToggleTest p:nth-child(2n) {
+            display: none;
+        }
+    </style>
+    </head>
+
+    <body>
+        <br>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="well">
+                        <div class="col-md-3 pull-left">
+                            <a class="btn btn-success btn-block" id="SlideDownButton">
+                            Slide Down
+                        </a>
+                        </div>
+                        <div class="col-md-9" id="SlideDownTest">
+                            <p>Mohammad</p>
+                            <p>Ali</p>
+                            <p>Iman</p>
+                            <p>Elnaz</p>
+                            <p>Hamed</p>
+                            <p>Behnam</p>
+                            <p>Somaye</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="well">
+                        <div class="col-md-3 pull-left">
+                            <a class="btn btn-success btn-block" id="SlideUpButton">
+                            Slide Up
+                        </a>
+                        </div>
+                        <div class="col-md-9" id="SlideUpTest">
+                            <p>Mohammad</p>
+                            <p>Ali</p>
+                            <p>Iman</p>
+                            <p>Elnaz</p>
+                            <p>Hamed</p>
+                            <p>Behnam</p>
+                            <p>Somaye</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="well">
+                        <div class="col-md-3 pull-left">
+                            <a class="btn btn-success btn-block" id="SlideToggleButton">
+                            Slide Toggle
+                        </a>
+                        </div>
+                        <div class="col-md-9" id="SlideToggleTest">
+                            <p>Mohammad</p>
+                            <p>Ali</p>
+                            <p>Iman</p>
+                            <p>Elnaz</p>
+                            <p>Hamed</p>
+                            <p>Behnam</p>
+                            <p>Somaye</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+    <!--  fade in fade out -->
+    <!-- 
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="FadeInButton">
+                                Fade In
+                            </a>
+                    </div>
+                    <div class="col-md-9" id="FadeInTest">
+                        <p style="display: none;">Mohammad</p>
+                        <p style="display: none;">Ali</p>
+                        <p style="display: none;">Iman</p>
+                        <p style="display: none;">Elnaz</p>
+                        <p style="display: none;">Hamed</p>
+                        <p style="display: none;">Behnam</p>
+                        <p style="display: none;">Somaye</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="FadeOutButton">
+                                Fade Out
+                            </a>
+                    </div>
+                    <div class="col-md-9" id="FadeOutTest">
+                        <p>Mohammad</p>
+                        <p>Ali</p>
+                        <p>Iman</p>
+                        <p>Elnaz</p>
+                        <p>Hamed</p>
+                        <p>Behnam</p>
+                        <p>Somaye</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-12">
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="FadeToggleButton">
+                                Fade Toggle
+                            </a>
+                    </div>
+                    <div class="col-md-9" id="FadeToggleTest">
+                        <p>Mohammad</p>
+                        <p>Ali</p>
+                        <p>Iman</p>
+                        <p>Elnaz</p>
+                        <p>Hamed</p>
+                        <p>Behnam</p>
+                        <p>Somaye</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> -->
+    <!-- made in animate -->
+    <!-- 
+    <style>
+        .colored {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: relative;
+            float: right;
+            margin-left: 10px;
+        }
+        
+        .Finish {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        
+        .inside {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            position: inherit;
+            margin: 5px;
+            left: 0px;
+        }
+    </style>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-12">
+                        <div class="colored" style=""></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                        <div class="colored"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="DelayButton">
+                            Delay
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="DelayTest">
+                        <div class="colored" id="div_1"></div>
+                        <div class="colored" id="div_2"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well">
+                    <div class="col-md-3 pull-left">
+                        <a class="btn btn-success btn-block" id="StopButton">
+                            Stop
+                        </a>
+                    </div>
+                    <div class="col-md-9" id="StopTest">
+                        <div class="colored" id="StopDiv"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="well" style="height: 350px;">
+
+
+                    <div class="col-md-4 pull-left">
+                        <a class="btn btn-success btn-block" id="StrButton">
+                            Start
+                        </a>
+                        <a class="btn btn-success btn-block" id="FinButton">
+                            Finish
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-md-9" id="FinishTest">
+        <div class="Finish" id="FinishDiv" style="position: absolute;top:0;">
+            <div class="inside"></div>
+        </div>
+    </div> -->
+    <!-- clear and queue -->
+    <!-- 
+    <style>
+        .colored {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            position: relative;
+            float: right;
+            margin-left: 10px;
+        }
+        
+        .Test {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+        
+        .inside {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            position: inherit;
+            margin: 5px;
+            left: 0px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <br>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well" style="height: 350px;">
+
+
+                        <div class="col-md-4 pull-left">
+                            <a class="btn btn-success btn-block" id="StrButton">
+                            Start
+                        </a>
+                            <a class="btn btn-success btn-block" id="ClearButton">
+                            Clear Queue
+                        </a>
+                            <a class="btn btn-success btn-block" id="OffButton">
+                            jQuery.fx.off
+                        </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-9">
+            <div class="Test" style="position: absolute;top:100;">
+                <div class="inside"></div>
+            </div>
+        </div> -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<script src="jquery.js"></script>
+
+</html>
+
+</html>
+
+</html>
+
+</html>
